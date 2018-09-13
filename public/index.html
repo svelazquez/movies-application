@@ -3,15 +3,26 @@
 <head>
     <meta charset="UTF-8" />
     <title>My Application</title>
+    <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
     <link rel="stylesheet" href="/style.css" />
 </head>
 <body>
 
     <div class="container">
         <h1>Loading...</h1>
+    <!--DIV FOR MOVIE RENDERING-->
         <div class="movies"></div>
+    <!--FORM FOR MOVIE SUBMISSION-->
+        <div style="display: none;" id="input-form">
+            <form method="post" enctype="application/x-www-form-urlencoded">
+                <input id="name-input" type="text" placeholder="Enter movie name..."/>
+                <input id="rating-input" type="text" placeholder="Enter movie rating x/5.."/>
+            </form>>
+            <button id="user-submit" type="button">Add a Movie</button>
+        </div>
+        <!--<img src="film-vector.png" id="movie-reel">-->
     </div>
 
-    <script src="/main.js"></script>
+    <script src="main.js"></script>
 </body>
 </html>
